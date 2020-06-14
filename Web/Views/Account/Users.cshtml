@@ -1,0 +1,16 @@
+﻿
+@using Microsoft.AspNetCore.Identity;
+@model IEnumerable<ApplicationUser>
+@using Web.Extensions
+@inject UserManager<ApplicationUser> _userManager
+	<div class="container">
+		@foreach (var user in Model)
+		{
+
+			<br />
+			@user.Email
+
+
+
+		}
+	</div>
